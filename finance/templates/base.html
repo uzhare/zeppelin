@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeppelin</title>
+
+    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        h1 { font-family: 'Indie Flower', cursive, Arial, serif; font-weight: 400; }
+        h4 { font-family: 'Josefin Sans', sans-serif;}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <header>
+    <div class='row'>
+      <div class='col-sm-offset-10'>
+          <h1>Zeppelin<blockquote><small>Something witty!</small></blockquote> </h1>
+          <hr/>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class='container'>
+    {% block content %}
+    {% endblock %}
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+  </body>
+</html>
+

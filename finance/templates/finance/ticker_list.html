@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-xs-10">
+			{% for ticker in ticker_list %}
+				<div class="well">
+					<h3><a href='{% url "display" ticker.id %}'>{{ticker.company_name}}</a></h3> 
+					<blockquote class="col-sm-offset-10">{{ticker.ticker}}</blockquote>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}
